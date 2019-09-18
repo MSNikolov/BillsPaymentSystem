@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20190918082354_MIg.cs" />
+    <Compile Remove="Migrations\20190918082354_MIg.Designer.cs" />
+    <Compile Remove="Migrations\20190918090103_InitialMigration.cs" />
+    <Compile Remove="Migrations\20190918090103_InitialMigration.Designer.cs" />
+    <Compile Remove="Migrations\20190918090925_InitialMigration.cs" />
+    <Compile Remove="Migrations\20190918090925_InitialMigration.Designer.cs" />
+    <Compile Remove="Migrations\20190918091524_InitialMigration.cs" />
+    <Compile Remove="Migrations\20190918091524_InitialMigration.Designer.cs" />
+    <Compile Remove="Migrations\20190918092632_InitialMigration.cs" />
+    <Compile Remove="Migrations\20190918092632_InitialMigration.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BillsPaymentSystem.Models\BillsPaymentSystem.Models.csproj" />
+  </ItemGroup>
+
+</Project>
